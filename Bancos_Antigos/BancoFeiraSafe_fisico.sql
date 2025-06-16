@@ -30,7 +30,8 @@ id_aluno varchar(20),
 id_professor int,
 id_postagem int PRIMARY KEY,
 id_foto int,
-FOREIGN KEY(id_foto) REFERENCES foto (id_foto)
+FOREIGN KEY(id_foto) REFERENCES foto (id_foto),
+FOREIGN KEY(id_projeto) REFERENCES projeto (id_projeto)
 );
 
 CREATE TABLE turma (
