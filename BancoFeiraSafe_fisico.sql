@@ -51,7 +51,7 @@ organizacao varchar(255)
 );
 
 CREATE TABLE professor (
-id_professor varchar(255) PRIMARY KEY,
+id_professor int PRIMARY KEY,
 email varchar(255),
 matricula varchar(20),
 id_nota int,
