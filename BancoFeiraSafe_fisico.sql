@@ -19,7 +19,8 @@ rm int,
 id_turma int,
 email_institucional varchar(255),
 disponivel tinyint(1),
-senha varchar(255)
+senha varchar(255),
+FOREIGN KEY(id_projeto) REFERENCES projeto (id_projeto)
 );
 
 CREATE TABLE postagem (
