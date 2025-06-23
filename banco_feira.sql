@@ -34,7 +34,7 @@ CREATE TABLE `aluno` (
   `nome_aluno` varchar(255) NOT NULL,
   `rm` int(11) DEFAULT NULL,
   `email_institucional` varchar(255) DEFAULT NULL,
-  `disponivel` tinyint(1) DEFAULT NULL,
+  `disponivel` boolean DEFAULT NULL,
   `senha` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
