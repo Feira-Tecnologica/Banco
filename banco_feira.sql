@@ -136,6 +136,7 @@ CREATE TABLE `postagem` (
 
 CREATE TABLE `professor` (
   `id_professor` int(11) NOT NULL,
+  `nome_professora` varchar(255) NOT NULL,
   `email` varchar(255) DEFAULT NULL,
   `matricula` varchar(20) DEFAULT NULL,
   `id_nota` int(11) DEFAULT NULL
