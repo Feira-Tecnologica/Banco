@@ -447,7 +447,7 @@ INSERT INTO `aluno` (`id_aluno`, `nome_aluno`, `rm`, `email_institucional`, `dis
 ('2C_29', 'NICOLE MODESTO MOURA', 24035, 'nicole.moura3@etec.sp.gov.br', 1, NULL),
 ('2C_30', 'PAOLA ONÓRIO ZARATINI', 24149, 'paola.zaratini@etec.sp.gov.br', 1, NULL),
 ('2C_31', 'PEDRO HENRIQUE RILLO DE CARVALHO', 24216, 'pedro.carvalho132@etec.sp.gov.br', 1, NULL),
-('2C_32', 'RIHANNA CAROLINA GONÇALVES ARANTOS', 25721, 'rihanna.arantos@etec.sp.gov.br', 1, NULL),
+('2C_32', 'RIHANNA CAROLINA GONÇALVES ARANTES', 25721, 'rihanna.arantes@etec.sp.gov.br', 1, NULL),
 ('2C_33', 'SOPHIA GONÇALVES MORAIS', 24266, 'sophia.morais@etec.sp.gov.br', 1, NULL),
 ('2C_34', 'TAMIRES ANASTACIO DE FREITAS', 24152, 'tamires.freitas3@etec.sp.gov.br', 1, NULL),
 ('2C_35', 'THAÍS QUINELATO ABE', 24031, 'thais.abe@etec.sp.gov.br', 1, NULL),
