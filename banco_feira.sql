@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Jul-2025 às 17:19
+-- Tempo de geração: 08-Ago-2025 às 12:49
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.0.25
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `banco_feira`
 --
-CREATE DATABASE IF NOT EXISTS `banco_feira` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `banco_feira`;
 
 -- --------------------------------------------------------
 
@@ -858,6 +856,29 @@ CREATE TABLE `ods` (
   `nome` varchar(100) NOT NULL,
   `descricao` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `ods`
+--
+
+INSERT INTO `ods` (`id_ods`, `nome`, `descricao`) VALUES
+(1, 'Erradicação da Pobreza', 'Acabar com a pobreza em todas as suas formas, em todos os lugares.'),
+(2, 'Fome Zero e Agricultura Sustentável', 'Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável.'),
+(3, 'Saúde e Bem-Estar', 'Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.'),
+(4, 'Educação de Qualidade', 'Assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.'),
+(5, 'Igualdade de Gênero', 'Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas.'),
+(6, 'Água Potável e Saneamento', 'Assegurar a disponibilidade e a gestão sustentável da água e do saneamento para todos.'),
+(7, 'Energia Limpa e Acessível', 'Assegurar o acesso confiável, sustentável, moderno e a preço acessível à energia para todos.'),
+(8, 'Trabalho Decente e Crescimento Econômico', 'Promover o crescimento econômico sustentado, inclusivo e sustentável, o emprego pleno e produtivo e o trabalho decente para todos.'),
+(9, 'Indústria, Inovação e Infraestrutura', 'Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação.'),
+(10, 'Redução das Desigualdades', 'Reduzir a desigualdade dentro dos países e entre eles.'),
+(11, 'Cidades e Comunidades Sustentáveis', 'Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis.'),
+(12, 'Consumo e Produção Responsáveis', 'Assegurar padrões de produção e de consumo sustentáveis.'),
+(13, 'Ação contra a Mudança Global do Clima', 'Tomar medidas urgentes para combater a mudança do clima e seus impactos.'),
+(14, 'Vida na Água', 'Conservar e usar sustentavelmente os oceanos, os mares e os recursos marinhos para o desenvolvimento sustentável.'),
+(15, 'Vida Terrestre', 'Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade.'),
+(16, 'Paz, Justiça e Instituições Eficazes', 'Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.'),
+(17, 'Parcerias e Meios de Implementação', 'Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável.');
 
 -- --------------------------------------------------------
 
