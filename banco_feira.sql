@@ -837,7 +837,7 @@ CREATE TABLE `nota` (
   `media` decimal(3,1) DEFAULT NULL,
   `comentario` varchar(255) DEFAULT NULL,
   `id_professor` varchar(11) NOT NULL,
-  `id_projeto` varchar(20) NOT NULL,
+  `id_projeto` int(11) NOT NULL,
   PRIMARY KEY (`id_nota`),
   KEY `nota_ibfk_1` (`id_professor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -1009,7 +1009,7 @@ CREATE TABLE `projeto` (
 --
 
 CREATE TABLE `projeto_aluno` (
-  `id_projeto` varchar(20) NOT NULL,
+  `id_projeto` int(11) NOT NULL,
   `id_aluno` varchar(20) NOT NULL,
   PRIMARY KEY (`id_projeto`,`id_aluno`),
   KEY `id_aluno` (`id_aluno`)
@@ -1022,7 +1022,7 @@ CREATE TABLE `projeto_aluno` (
 --
 
 CREATE TABLE `projeto_aluno_ods` (
-  `id_projeto` varchar(20) NOT NULL,
+  `id_projeto` int(11) NOT NULL,
   `id_aluno` varchar(20) NOT NULL,
   `id_ods` int(11) NOT NULL,
   PRIMARY KEY (`id_projeto`,`id_aluno`,`id_ods`),
