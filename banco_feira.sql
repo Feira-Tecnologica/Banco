@@ -849,7 +849,7 @@ CREATE TABLE `nota` (
 --
 
 CREATE TABLE `ods` (
-  `id_ods` int(11) NOT NULL PRIMARY KEY,
+  `id_ods` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nome` varchar(100) NOT NULL,
   `descricao` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
