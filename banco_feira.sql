@@ -923,7 +923,7 @@ CREATE TABLE `postagem` (
 --
 
 CREATE TABLE `professor` (
-  `id_professor` varchar(11) NOT NULL PRIMARY KEY,
+  `id_professor` varchar(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nome_professor` varchar(255) NOT NULL,
   `email` varchar(255) DEFAULT NULL,
   `matricula` varchar(20) DEFAULT NULL
