@@ -923,7 +923,7 @@ CREATE TABLE `postagem` (
 --
 
 CREATE TABLE `professor` (
-  `id_professor` varchar(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id_professor` varchar(11) NOT NULL PRIMARY KEY,
   `nome_professor` varchar(255) NOT NULL,
   `email` varchar(255) DEFAULT NULL,
   `matricula` varchar(20) DEFAULT NULL
@@ -991,7 +991,7 @@ INSERT INTO `professor` (`id_professor`, `nome_professor`, `email`, `matricula`)
 --
 
 CREATE TABLE `projeto` (
-  `id_projeto` varchar(20) NOT NULL PRIMARY KEY,
+  `id_projeto` varchar(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `titulo_projeto` varchar(100) DEFAULT NULL,
   `descricao` varchar(255) DEFAULT NULL,
   `bloco` varchar(10) DEFAULT NULL,
