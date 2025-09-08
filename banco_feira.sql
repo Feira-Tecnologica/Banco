@@ -1018,15 +1018,13 @@ CREATE TABLE `projeto_aluno` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `projeto_aluno_ods`
+-- Estrutura para tabela `projeto_ods`
 --
 
-CREATE TABLE `projeto_aluno_ods` (
+CREATE TABLE `projeto_ods` (
   `id_projeto` int(11) NOT NULL,
-  `id_aluno` varchar(20) NOT NULL,
   `id_ods` int(11) NOT NULL,
-  PRIMARY KEY (`id_projeto`,`id_aluno`,`id_ods`),
-  KEY `id_aluno` (`id_aluno`),
+  PRIMARY KEY (`id_projeto`, `id_ods`),
   KEY `id_ods` (`id_ods`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -1077,12 +1075,11 @@ ALTER TABLE `projeto_aluno`
   ADD CONSTRAINT `projeto_aluno_ibfk_2` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id_aluno`);
 
 --
--- Restrições para tabelas `projeto_aluno_ods`
+-- Restrições para tabelas `projeto_ods`
 --
-ALTER TABLE `projeto_aluno_ods`
-  ADD CONSTRAINT `projeto_aluno_ods_ibfk_1` FOREIGN KEY (`id_projeto`) REFERENCES `projeto` (`id_projeto`),
-  ADD CONSTRAINT `projeto_aluno_ods_ibfk_2` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id_aluno`),
-  ADD CONSTRAINT `projeto_aluno_ods_ibfk_3` FOREIGN KEY (`id_ods`) REFERENCES `ods` (`id_ods`);
+ALTER TABLE `projeto_ods`
+  ADD CONSTRAINT `projeto_ods_ibfk_1` FOREIGN KEY (`id_projeto`) REFERENCES `projeto` (`id_projeto`),
+  ADD CONSTRAINT `projeto_ods_ibfk_3` FOREIGN KEY (`id_ods`) REFERENCES `ods` (`id_ods`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
